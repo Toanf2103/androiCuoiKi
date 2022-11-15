@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:paddingHorizontal="10dp">
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageSinger"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anh_nen"
+            app:riv_border_color="#333333"
+            app:riv_corner_radius="60dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+             />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên: Nguyễn Đắc Toàn"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/levelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cấp bậc: Toanf2103"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                >
+            </TextView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/adrressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: Việt Nam"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                >
+            </TextView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/countryTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quốc gia: Việt Nam"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                >
+            </TextView>
+            <RatingBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1"
+                android:isIndicator="true"
+                android:progressTint="#fbf551"
+                >
+
+            </RatingBar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

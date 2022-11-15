@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".ListInformationPolice"
+    android:background="@color/background"
+    android:paddingHorizontal="20dp"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingVertical="10dp"
+
+
+        android:weightSum="18"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:src="@drawable/ic_icon_logout"
+
+            >
+
+        </ImageView>
+
+        <TextView
+            android:paddingTop="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="POLICE"
+            android:textColor="#000000"
+            android:textSize="30dp">
+
+        </TextView>
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_icon_mess"
+
+            >
+
+        </ImageView>
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_icon_more"
+
+            >
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        >
+    </ListView>
+
+</LinearLayout>
